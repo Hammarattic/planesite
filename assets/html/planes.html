@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../css/stylesheet.css">
+  <meta charset="UTF-8">
+  <title>Plane Site</title>
+</head>
+<body>
+<div>
+  <div>
+    <div class="txt">
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="planes.html">Planes</a></li>
+          <li><a href="https://planefinder.net/" target="_blank">Flightradar</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          this is PLANE page
+        </ul>
+      </nav>
+    </div>
+
+    <div class="img-container">
+      <div class="plane-facts">
+        <div>
+          <h1>Plane Facts</h1>
+
+          <!-- API Call Section -->
+          <div id="content-container" class="box">
+            <div class="item"></div>
+
+          </div>
+          <script src="../js/APICALL.js"></script>
+        </div>
+
+        <!-- Images and Descriptions -->
+        <div>
+          <img class="modal-trigger" src="../img/antonov.png" alt="Picture of Antonov 225" width="1000px" height="auto" style="border-radius: 30%;">
+          <p>This is the Antonov 225. It was shot down in Ukraine at the start of the Russia-Ukraine war.</p>
+          <p>The Antonov is under reconstruction at a secret location.</p>
+
+          <img class="modal-trigger" src="../img/a380.png" alt="A A380 from Lufthansa during takeoff" width="1000px" height="auto" style="border-radius: 100%;">
+          <p>This is the A380, the biggest passenger plane with a capacity of 500 people.</p>
+
+          <img class="modal-trigger" src="../img/a340.png" alt="A A340 from Lufthansa" width="1000px" height="auto" style="border-radius: 50%;">
+          <p>This is an A340. It's underpowered for its size, using four A320 engines for power.</p>
+
+          <img class="modal-trigger" src="../img/747.png" alt="A 757 from Lufthansa" width="1000px" height="auto" style="border-radius: 50%;">
+          <p>this is the 747 also known as the queen of the skies lufthansa is the only airliner in europe who still flies it with pax.</p>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script src="../js/showimage.js"></script>
+</body>
+</html>

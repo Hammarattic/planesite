@@ -1,0 +1,203 @@
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+
+
+}
+body {
+    background:#222222;
+}
+.navbar {
+    background-color: skyblue;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.navbar-links {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-links li {
+    padding: 0 105px;
+}
+
+.navbar-links a{
+
+    color: white;
+text-decoration: none;
+    transition: color 0.3s ease;
+}
+.navbar-links a:hover {
+    color: skyblue;
+}
+
+.img-container {
+    color: whitesmoke;
+    text-align: center;
+}
+.img-container img {
+display: inline-flex;
+    width: 100%;
+    max-width : 1000px;
+    padding: 103.5px;
+}
+.img-container img:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;  /* Smooth transition for hover effect */
+    cursor: pointer;;
+}
+.img-container p {
+    text-align: center;
+    color: white;
+    font-size: 1.88em;
+}
+
+
+.img-container2 {
+    color: whitesmoke;
+    text-align: center;
+}
+.img-container2 img {
+    width: 100%;
+    max-width : 1000px;
+    padding: 103.5px;
+
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.plane-facts {
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 200px;
+    color: whitesmoke;
+    padding: 250px;
+    left: 10000px;
+
+
+
+
+}
+.plane-facts h2{
+    padding: 30px;
+}
+
+.flexbox p {
+    background-color: lightblue;
+    padding: 10px;
+}
+.a380airbus{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;;
+    color: whitesmoke;
+    font-size: 34px;
+     ;
+}
+
+
+#myImg {
+    border-radius: 30%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.box{
+    background-color: darkgoldenrod;
+}
+.flightradar{
+    padding: 500px;
+    text-align: center;
+    color: white;
+    font-size: 10em;
+}
+.item{
+    text-decoration: underline;
+}
+
+
+
+
+
